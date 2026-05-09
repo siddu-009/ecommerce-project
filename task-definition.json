@@ -1,0 +1,20 @@
+{
+  "family": "ecommerce-task",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "ecommerce-container",
+      "image": "634277303959.dkr.ecr.us-east-1.amazonaws.com/ecommerce-project:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 5000
+        }
+      ]
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512"
+}
