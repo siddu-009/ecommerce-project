@@ -3,7 +3,7 @@
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "my-container",
+      "name": "ecommerce-container",
       "image": "634277303959.dkr.ecr.us-east-1.amazonaws.com/ecommerce-project:latest",
       "essential": true,
       "portMappings": [
