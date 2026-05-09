@@ -29,6 +29,7 @@ const catalog = {
   ]
 };
 
+#siddu
 /* ---------- State ---------- */
 const body = document.body;
 const category = body.getAttribute('data-category') || 'electronics';
